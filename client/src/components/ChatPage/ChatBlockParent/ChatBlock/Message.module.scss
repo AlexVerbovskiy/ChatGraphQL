@@ -1,0 +1,132 @@
+.message,
+.messageDark {
+    box-sizing: content-box;
+    overflow: hidden;
+    text-align: center;
+    max-width: 65%;
+    max-height: 10000px;
+    min-height: 30px;
+    border: 1px solid #5ea3a3;
+    display: flex;
+    flex-direction: column;
+    background-color: #5ea3a3;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+
+    box-shadow: 1px 0px 18px 9px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 1px 0px 18px 9px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 1px 0px 18px 9px rgba(255, 255, 255, 0.25);
+}
+
+.messageDark {
+    border: 1px solid #be3144;
+    box-shadow: 1px 0px 18px 5px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 1px 0px 18px 5px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 1px 0px 18px 5px rgba(255, 255, 255, 0.25);
+}
+
+.firstListClass,
+.secondListClass {
+    width: 60%;
+    height: 700px;
+
+    video {
+        height: auto;
+        width: auto;
+    }
+
+    img {
+        height: 500px;
+        width: 600px;
+    }
+
+    audio {
+        display: block;
+    }
+
+
+    @media (max-width: 500px) {
+        audio {
+            width: 25px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        audio {
+            width: 50px;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        audio {
+            width: 100px;
+        }
+    }
+
+    @media (max-width: 2000px) {
+        audio {
+            width: 200px;
+        }
+    }
+}
+
+.myMessage {
+    background: #ffffff;
+}
+
+.enemyMessage {
+    background: #c5c5c5;
+}
+
+.myMessageDark {
+    background-color: #3a4750 !important;
+    border: 1px solid #3a4750 !important;
+    color: #d3d6db;
+}
+
+.enemyMessageDark {
+    background-color: #3a4750 !important;
+    border: 1px solid #3a4750 !important;
+    color: #d3d6db;
+    /*background-color: #d3d6db !important;
+    border: 1px solid #d3d6db !important;
+    color:#3a4750;*/
+}
+
+.date,
+.dateDark {
+    color: black;
+    font-size: 10px;
+    opacity: 0.75;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    text-align: start;
+}
+
+.dateDark {
+    opacity: 1;
+    color: #be3144
+}
+
+.myDivElement {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    .date,
+    .dateDark {
+        text-align: end;
+    }
+}
+
+.enemyDivElement {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+    .date,
+    .dateDark {
+        text-align: start;
+    }
+}

@@ -1,0 +1,55 @@
+.mediaAcceptSend,
+.mediaAcceptSendDark {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popabParent,
+.popabParentDark {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(204, 204, 204, 0.534);
+}
+
+.popabParentDark {
+    section {
+        div {
+            background-color: #303841;
+        }
+    }
+    z-index: 999;
+}
+
+.sendButton,
+.sendButtonDark {
+    border: 0px;
+    width: 100px;
+    height: 50px;
+    opacity: 1;
+}
+
+.sendButtonDark, .sendButtonDark:hover {
+    background-color: #be3144;
+    color: #303841;
+    font-weight: bold;
+}
+
+.acceptSendVideoBlock,
+.acceptSendImageBlock {
+    height: 400px;
+    width: auto;
+}
+
+.acceptSendAudioBlock {
+    height: auto;
+    width: 400px;
+}

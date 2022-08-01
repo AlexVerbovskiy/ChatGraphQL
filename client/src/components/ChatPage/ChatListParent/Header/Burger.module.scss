@@ -1,0 +1,51 @@
+.burger,
+.burgerDark {
+    .dropdownToggle {
+        opacity: 0.7;
+
+        &:hover,
+        &:focus {
+            opacity: 0.9;
+        }
+
+        i {
+            color: rgb(56, 56, 255) !important;
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .dropdownMenu li {
+        a {
+            opacity: 0.5;
+        }
+
+        a:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .dropdownMenuDark {
+        background-color:#303841;
+        color:#be3144;
+        li {
+            a{
+                color:#be3144;
+            }
+            a:hover{
+                background-color: #3a4750;
+                color:#be3144;
+            }
+        }
+    }
+
+}
+
+.burgerDark {
+    .dropdownToggle i {
+        color: #be3144 !important;
+    }
+
+}

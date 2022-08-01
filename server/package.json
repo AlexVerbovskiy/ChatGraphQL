@@ -1,0 +1,46 @@
+{
+  "name": "graphql-revisit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-tools/schema": "^8.3.10",
+    "apollo-server": "^3.6.7",
+    "apollo-server-core": "^3.6.7",
+    "apollo-server-express": "^3.6.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^12.0.3",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "graphql": "^16.3.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-tools": "^8.2.8",
+    "graphql-ws": "^5.8.1",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4",
+    "nanoid": "^3.2.0",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15",
+    "subscriptions-transport-ws": "^0.11.0",
+    "uuid": "^8.3.2",
+    "ws": "^8.5.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "testUser": "mocha tests/user.test.js  --timeout 10000",
+    "testChat": "mocha tests/chat.test.js  --timeout 10000"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  }
+}

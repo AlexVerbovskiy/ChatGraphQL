@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark-theme {
+  background-color: rgb(32, 32, 32);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#saving {
+  margin-right: 5px;
+}
+
+.flex-grow-1 {
+  margin-left: 5px;
+}
+
+@media (max-width: 990px) {
+
+  #leftSection {
+    display: none;
+  }
+
+  #rightSection {
+    display: none;
+  }
+
+  #parentMainChatBlock {
+    margin-right: 0px;
+    border-radius: 0;
+  }
+
+  #parentMainChatBlock::-webkit-scrollbar-thumb {
+    background: lightgray;
+  }
+
+  .dark-theme #parentMainChatBlock::-webkit-scrollbar-thumb {
+    background: #303841;
+  }
+
+  #mainChatBlock {
+    padding-left: calc(1.5rem+10px) !important;
+  }
+
+  #messageSendDivParent button {
+    margin-right: 0;
+  }
+
+  #emojiButton {
+    margin-left: 0;
+  }
+
+  #chatList {
+    padding-right: 0 !important;
+  }
+
+  #chatList::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #chatList::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  #chatList::-webkit-scrollbar-thumb {
+    background: white;
+  }
+
+  #chatList::-webkit-scrollbar-thumb:hover {
+    background: rgb(32,32,32);
+  }
+
+  .dark-theme #chatList::-webkit-scrollbar-track {
+    background: rgb(32,32,32);
+  }
+
+  .dark-theme #chatList::-webkit-scrollbar-thumb {
+    background: rgb(32,32,32);
+  }
+
+  .dark-theme #chatList::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }
+}
+
+
+.active-parent-block {
+  display: block !important;
+}
+
+#checkedDark {
+  background: #3a4750
+}
+
+
+.alert-danger {
+  animation: anim 3s linear 1 normal forwards;
+}
+
+@keyframes anim {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}

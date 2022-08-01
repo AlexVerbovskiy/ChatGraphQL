@@ -1,0 +1,84 @@
+.findUser {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    pointer-events: painted;
+
+    &:focus~.searchChat {
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+}
+
+.findUserDark{
+    color: #be3144;
+}
+
+.searchBox,
+.searchBoxDark {
+    position: relative;
+
+    &,
+    & input {
+        width: 100%;
+    }
+}
+
+.searchChat,
+.searchChatDark {
+    width: 280px;
+    border-style: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+
+    &::placeholder {
+        color: black;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+
+    &:focus {
+        /*width: 300px;*/
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+}
+
+.searchChatDark {
+    background-color: #3a4750 !important;
+    color: #be3144;
+
+    &:focus {
+        border:0px;
+        color: #be3144;
+        background-color: #3a4750 !important;
+        box-shadow:
+            5px 5px 5px yellow,
+            -5px 5px 5px green,
+            -5px -5px 5px blue,
+            5px -5px 5px red;
+    }
+    &::placeholder {
+        color: #be3144;
+      }
+}

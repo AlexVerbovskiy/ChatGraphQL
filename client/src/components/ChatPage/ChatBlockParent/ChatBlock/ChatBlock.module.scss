@@ -1,0 +1,117 @@
+.parentMainChatBlock,
+.parentMainChatBlockDark {
+    overflow-y: auto;
+    position: relative !important;
+    display: flex;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: 100% 100%;
+    flex-direction: column;
+    max-height: calc(100vh - 166px);
+    min-height: calc(100vh - 166px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 20px;
+    background-color: lightgray;
+    &> :first-child {
+        margin-top: auto !important;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: lightgray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b1b1b1;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #b1b1b1;
+    }
+}
+
+.messagesList {
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: transparent;
+
+    div:not(:last-child) {
+        div:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.parentMainChatBlockDark {
+    background-color: #303841;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #303841;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #be3144;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #be3144;
+    }
+}
+
+.mainChatBlockDark {
+    background-color: transparent;
+}
+
+.defaultMessage {
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    display: grid;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.emojiBlock,
+.emojiBlockDark {
+    font-size: 22px;
+    position: fixed;
+    left: 26%;
+    bottom: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 400px;
+    background-color: rgb(236, 236, 236);
+    border-top: 10px solid rgb(236, 236, 236);
+    border-right: 17px solid rgb(236, 236, 236);
+    border-bottom: 10px solid rgb(236, 236, 236);
+    border-left: 20px solid rgb(236, 236, 236);
+    border-radius: 5%;
+}
+
+.emojiBlockDark {
+    background-color: #0f1021;
+    border-top: 10px solid #0f1021;
+    border-right: 17px solid #0f1021;
+    border-bottom: 10px solid #0f1021;
+    border-left: 20px solid #0f1021;
+}
+
+.containerMessagesList {
+    display: flex;
+    width: 100%;
+}
+
